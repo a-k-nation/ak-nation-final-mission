@@ -2,6 +2,19 @@
 <html>
 
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script>
+function PlayMusic() {
+
+  var play=document.getElementById("music");
+  play.play();
+}
+
+$(document).ready(function(){
+  setTimeout(PlayMusic,3000);
+})
+
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The End</title>
@@ -53,8 +66,7 @@
 <br>
     <br>
     <br>
-     <audio controls autoplay>
-      <source src="Halo Theme Song Original.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio> 
+     <audio controls id="music" >
+  <source src="Halo Theme Song Original.mp3" type="audio/mpeg">
+</audio>
 </html>
